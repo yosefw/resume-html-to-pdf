@@ -1,11 +1,16 @@
+@brand-primary: #FC3E1D;
+
 @media print {
+  
   @page {
     size: A4;
     margin: 57pt;
   }
+  
   html {
     font-size: 11pt;
   }
+
   body {
     font-family: "Roboto";
     font-weight: 300;
@@ -13,95 +18,126 @@
     color: #000;
     background-color: #fff;
   }
+  
   .clearfix {
     overflow: auto;
     zoom: 1;
   }
-  header,
+
+  header, 
   section {
     position: relative;
   }
-  a {
-    color: #fc3e1d;
+  
+  p {
+    
   }
+
+  a {
+    color: @brand-primary;
+  }
+
   ul,
   ol {
     list-style: none;
   }
+  
   li {
     page-break-inside: avoid;
   }
+  
   h1,
   h2,
   h3 {
     page-break-after: avoid;
   }
+  
   h1,
   h2 {
     font-weight: 700;
   }
+  
   h1 {
     font-size: 2.369em;
   }
+
   h2 {
     display: block;
     font-size: 1.777em;
     margin-top: 0.75em;
     margin-bottom: 0.25em;
   }
+  
   h3 {
     display: inline-block;
     font-size: 1.333em;
     font-weight: 400;
   }
-  section li {
-    margin-bottom: 1em;
+  
+  section {
+    
+    li {
+      margin-bottom: 1em;
+    }
+
+    h3 {
+      width: 33.333%;
+    }
+
+    h3 .period {
+      color: #999;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+    .desc {
+      display: inline-block;
+      width: 66.666%;
+      float: right;
+    }
   }
-  section h3 {
-    width: 33.333%;
-  }
-  section h3 .period {
-    color: #999;
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  section .desc {
-    display: inline-block;
-    width: 66.666%;
-    float: right;
-  }
+  
   header {
     margin-bottom: 1em;
+    
+    h1 {
+      display: inline-block;
+    }
+    
+    #contact {
+      display: inline-block;
+      float: right;
+      text-align: right;
+    }
   }
-  header h1 {
-    display: inline-block;
-  }
-  header #contact {
-    display: inline-block;
-    float: right;
-    text-align: right;
-  }
+      
+  
+  
   #hero {
     font-size: 1.333em;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
+    
+    .fa-heart {
+      color: @brand-primary;
+    }
   }
-  #hero .fa-heart {
-    color: #fc3e1d;
+  
+  
+  #skills {
+    
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        display: inline-block;
+        width: 50%;
+      }
+    }
   }
-  #skills ul {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  #skills ul li {
-    display: inline-block;
-    width: 50%;
-  }
+  
   /*
   
   section:not(#skills) h3 {
@@ -110,4 +146,5 @@
   }
   
   */
+  
 }
