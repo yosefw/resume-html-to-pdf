@@ -6,12 +6,20 @@
     <title>Yosef Waysman — Resume 2015</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,600,700">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" media="screen" href="styles.css">
+    <link rel="stylesheet" media="print" href="styles.css">
   </head>
   <body>
     <header class="clearfix">
-      <h1>Yosef Waysman</h1>
+      <div id="logo">
+        <img id="logomark" src="logo.png">
+        <h1>
+          Yosef Waysman
+          <small>UX/UI Designer & Coder</small>
+        </h1>
+      </h1>
+      </div>
       <div id="contact">
         <ul>
           <li id="website">
@@ -31,7 +39,7 @@
       </div>
     </header>
     <section id="hero">
-      I'm a UX/UI designer who codes. I <i class="fa fa-heart"></i> designing simple interface for useful products.
+      I <i class="fa fa-heart"></i> designing <strong>simple interfaces</strong> for <strong>useful products</strong>. I'm looking for a hands-on design position, either as a UX/UI designer or a product manager. I prefer working on productivity-oriented products (think GitHub, not Instagram). Learn more in my <a href="http://yosefw.me/open-letter/">Open Letter to a Potential Employer</a>
     </section>
     <section id="skills">
       <h2>Skills</h2>
@@ -51,7 +59,7 @@
         <li>
           <h3>Coding</h3>
           <p>
-            I can write my own HTML/CSS/jQuery.
+            Write my own HTML/CSS/jQuery.
           </p>
         </li>
         <li>
@@ -63,34 +71,48 @@
       </ul>
     </section>
     <section id="experience">
-      <h2>Work Experience</h2>
+      <h2>
+        Work Experience Highlights
+        <a id="complete-history" href="https://il.linkedin.com/in/yosefw">Complete work history on LinkedIn</a>
+      </h2>
       <ol>
         <li class="clearfix">
-          <h3>
-            Plint
-            <span class="period">
-              06/2014–10/2014
-            </span>
-          </h3>
+          
           <div class="desc">
+            <h3>
+              Plint
+            </h3>
+            <span class="period">06/2014–10/2014</span>
             <p>
-              Startup co-founder and designer at Plint — a business “matchmaking” app for events and conferences.
+              Plint was a startup I co-founded. We wanted to create a “matchmaking” app for business events. I was responsible for all design related duties:
             </p>
-            <a href="http://yosefw.me/projects/plint/">Read my case study</a>
+            <ul>
+              <li>Designed the MVP.</li>
+              <li>Designed and developed the <a href="http://yosefw.me/plint-landing-page/">"coming soon" page</a>.</li>
+              <li>Designed our pitch deck.</li>
+              <li>Created the initial branding.</li>
+              <li>Created future concept mockups.</li>
+              <li>Took part in the database planning.</li>
+            </ul>
+            <a class="case-study" class="case-study" href="http://yosefw.me/projects/plint/">Read my case study</a>
           </div> <!-- .desc -->
         </li>
         <li class="clearfix">
-          <h3>
-            EverythingMe
-            <span class="period">
-              02/2014–10/2011
-            </span>
-          </h3>
+          
           <div class="desc">
+            <h3>
+              EverythingMe
+            </h3>
+            <span class="period">02/2014–10/2011</span>
             <p>
-               UX Designer at EverythingMe.
+              I had several roles which included aspects of UX design, product managment and project management:
             </p>
-            <a href="http://yosefw.me/projects/everythingme/">Read my case study</a>
+            <ul>
+              <li>Joined the company as Apps Manager. Designed dozens of mobile web apps and managed their development and maintanance.</li>
+              <li>Designed new internal tools and improved existing ones.</li>
+              <li>Managed UX aspects of the company's partnership with Mozilla on <a href="https://www.mozilla.org/en-US/firefox/os/2.0/">Firefox OS</a>. My job was to make sure our features are integrated into the new OS's user experience.</li>
+            </ul>
+            <a class="case-study" href="http://yosefw.me/projects/everythingme/">Read my case study</a>
           </div> <!-- .desc -->
         </li>
       </ol>
@@ -99,17 +121,21 @@
       <h2>Volunteer Work</h2>
       <ol>
         <li class="clearfix">
-          <h3>
-            The Open Knowledge Workshop
-            <span class="period">
-              05/2012–Now
-            </span>
-          </h3>
+          
           <div class="desc">
+            <h3>
+              The Public Knowledge Workshop
+              (הסדנא לידע ציבורי)
+            </h3>
+            <span class="period">05/2012–Now</span>
             <p>
-              UX/UI Designer on a leading open data project
+              Designer of the <a href="http://openpension.org.il">Open Pension</a> project:
             </p>
-            <a href="http://yosefw.me/projects/open-pension/">Read my case study</a>
+            <ul>
+              <li>Designed the site's interface and information architecture.</li>
+              <li>Coded all CSS (in LESS) on top of Bootstrap and parts of the templates.</li>
+            </ul>
+            <a class="case-study" href="http://yosefw.me/projects/open-pension/">Read my case study</a>
           </div> <!-- .desc -->
         </li>
       </ol>
@@ -118,30 +144,30 @@
       <h2>Education</h2>
       <ol>
         <li class="clearfix">
-          <h3>
-            B.A. in Political Science
-            <span class="period">
-              2008–2010
-            </span>
-          </h3>
+          
           <div class="desc">
+            <h3>
+              Design studies
+            </h3>
             <p>
-              BA in Political Science from the Herzliya
-Interdisciplinary Center. On the Dean’s list (top 10 of class) for all 3 years; graduated summa cum laude.
+              Mostly self-taught through online courses and books (recently read: <a href="http://abookapart.com/products/responsive-web-design">Responsive Web Design, 2nd edition</a>).
             </p>
           </div> <!-- .desc -->
         </li>
         <li class="clearfix">
-          <h3>
-            Design eduction
-            <span class="period">
-              2011—Infinity
-            </span>
-          </h3>
+          
           <div class="desc">
+            <h3>
+              Academic education
+            </h3>
+            <span class="period">2008–2010</span>
             <p>
-              I am mostly self-taught through books (currently reading: The Elements of Typographic Style) and online courses.
+              B.A. in Political Science from the Herzliya Interdisciplinary Center (המרכז הבינתחומי).
             </p>
+            <ul>
+              <li>On the Dean’s list (top 10 of class) for all 3 years.</li>
+              <li>Graduated summa cum laude.</li>
+            </ul>
           </div> <!-- .desc -->
         </li>
       </ol>

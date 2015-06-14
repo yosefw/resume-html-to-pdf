@@ -4,10 +4,16 @@
     margin: 57pt;
   }
   html {
+    box-sizing: border-box;
     font-size: 11pt;
   }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
   body {
-    font-family: "Roboto";
+    font-family: "Roboto", Arial;
     font-weight: 300;
     line-height: 1.5;
     color: #000;
@@ -21,12 +27,28 @@
   section {
     position: relative;
   }
+  p {
+    margin-bottom: 0.5em;
+  }
+  p + ul,
+  p + ol {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 2em;
+  }
   a {
+    color: inherit;
+  }
+  a:visited {
+    color: inherit;
+  }
+  #contact a,
+  #hero a,
+  a.case-study {
     color: #fc3e1d;
   }
-  ul,
-  ol {
-    list-style: none;
+  strong {
+    font-weight: 700;
   }
   li {
     page-break-inside: avoid;
@@ -35,57 +57,98 @@
   h2,
   h3 {
     page-break-after: avoid;
+    display: block;
+    position: relative;
+    font-family: "Roboto", Arial;
   }
   h1,
   h2 {
     font-weight: 700;
   }
   h1 {
-    font-size: 2.369em;
+    font-size: 1.777em;
+    line-height: 1.25;
   }
   h2 {
-    display: block;
-    font-size: 1.777em;
-    margin-top: 0.75em;
-    margin-bottom: 0.25em;
+    font-size: 1.333em;
+    margin-top: 1em;
+    padding-bottom: 0.2em;
+    margin-bottom: 0.75em;
   }
   h3 {
-    display: inline-block;
-    font-size: 1.333em;
+    font-size: 1.1665em;
     font-weight: 400;
+    margin-bottom: 0.25em;
   }
-  section li {
+  section {
     margin-bottom: 1em;
   }
-  section h3 {
-    width: 33.333%;
+  section h2 {
+    border-bottom: 1px solid #eeeeee;
   }
-  section h3 .period {
-    color: #999;
+  section h2 a {
+    float: right;
+    margin-top: 3pt;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: inherit;
+  }
+  section ol > li {
+    margin-bottom: 2em;
+  }
+  section .period {
+    display: block;
+    margin-bottom: 0.25em;
+    color: #eeeeee;
+    font-family: "Roboto", Arial;
     font-weight: 300;
     font-size: 1rem;
   }
-  section .desc {
-    display: inline-block;
-    width: 66.666%;
-    float: right;
+  section p,
+  section ul,
+  section ol {
+    margin-bottom: 0.25em;
+  }
+  section a.case-study:after {
+    font-family: "FontAwesome";
+    content: " \f178";
   }
   header {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    vertical-align: middle;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  header #logo {
+    display: inline-block;
+  }
+  header #logomark {
+    margin-top: 5pt;
+    margin-right: 0.5em;
   }
   header h1 {
     display: inline-block;
   }
+  header h1 small {
+    display: block;
+    font-size: 0.75em;
+    font-weight: 300;
+    color: #eeeeee;
+  }
   header #contact {
     display: inline-block;
     float: right;
+    margin-top: 0.75em;
     text-align: right;
+    line-height: 1.3;
   }
   #hero {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    font-family: Georgia;
     font-size: 1.333em;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    line-height: 1.6;
+    text-align: justify;
   }
   #hero .fa-heart {
     color: #fc3e1d;
@@ -101,13 +164,9 @@
   #skills ul li {
     display: inline-block;
     width: 50%;
+    margin-bottom: 1em;
   }
-  /*
-  
-  section:not(#skills) h3 {
-    font-weight: 700;
-    font-size: 1rem;
+  #skills ul li:nth-child(odd) {
+    padding-right: 1em;
   }
-  
-  */
 }
